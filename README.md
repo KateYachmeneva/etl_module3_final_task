@@ -47,32 +47,6 @@ Analytical Data Marts
 * Python
 * psycopg2
 * pymongo
-
----
-
-## Структура проекта
-
-project
-
-├─ airflow
-│  ├─ dags
-│  │  ├─ generate_mongo_data_dag.py
-│  │  ├─ mongo_to_postgres_dag.py
-│  │  ├─ datamarts_dag.py
-│  │  └─ partition_event_logs_dag.py
-│
-├─ scripts
-│  ├─ generate_mongo_data.py
-│  ├─ load_user_sessions.py
-│  ├─ init_postgress.py
-│  ├─ build_datamarts.py
-│  ├─ data_quality_checks.py
-│  └─ create_partitioned_event_logs.py
-│
-├─ docker-compose.yml
-│
-└─ report.pdf (скриншоты и описание выполнения)
-
 ---
 
 ## Генерация данных
