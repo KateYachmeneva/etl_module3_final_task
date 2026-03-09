@@ -1,0 +1,24 @@
+[2026-03-08T13:26:14.451+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-03-08T13:26:14.466+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: generate_mongo_data.generate_data_in_mongo manual__2026-03-08T13:26:12.300827+00:00 [queued]>
+[2026-03-08T13:26:14.470+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: generate_mongo_data.generate_data_in_mongo manual__2026-03-08T13:26:12.300827+00:00 [queued]>
+[2026-03-08T13:26:14.470+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-03-08T13:26:14.475+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): generate_data_in_mongo> on 2026-03-08 13:26:12.300827+00:00
+[2026-03-08T13:26:14.478+0000] {standard_task_runner.py:64} INFO - Started process 56 to run task
+[2026-03-08T13:26:14.479+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'generate_mongo_data', 'generate_data_in_mongo', 'manual__2026-03-08T13:26:12.300827+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/generate_mongo_data_dag.py', '--cfg-path', '/tmp/tmpnj21shid']
+[2026-03-08T13:26:14.481+0000] {standard_task_runner.py:91} INFO - Job 3: Subtask generate_data_in_mongo
+[2026-03-08T13:26:14.523+0000] {task_command.py:426} INFO - Running <TaskInstance: generate_mongo_data.generate_data_in_mongo manual__2026-03-08T13:26:12.300827+00:00 [running]> on host b6c7c57dde04
+[2026-03-08T13:26:14.572+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='generate_mongo_data' AIRFLOW_CTX_TASK_ID='generate_data_in_mongo' AIRFLOW_CTX_EXECUTION_DATE='2026-03-08T13:26:12.300827+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-03-08T13:26:12.300827+00:00'
+[2026-03-08T13:26:14.573+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-03-08T13:26:14.598+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-03-08T13:26:14.599+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/scripts/generate_mongo_data.py']
+[2026-03-08T13:26:14.603+0000] {subprocess.py:86} INFO - Output:
+[2026-03-08T13:26:15.136+0000] {subprocess.py:93} INFO - Данные успешно загружены в MongoDB:
+[2026-03-08T13:26:15.137+0000] {subprocess.py:93} INFO - user_sessions: 1000
+[2026-03-08T13:26:15.137+0000] {subprocess.py:93} INFO - event_logs: 1000
+[2026-03-08T13:26:15.137+0000] {subprocess.py:93} INFO - support_tickets: 1000
+[2026-03-08T13:26:15.488+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-03-08T13:26:15.488+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-03-08T13:26:15.504+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=generate_mongo_data, task_id=generate_data_in_mongo, run_id=manual__2026-03-08T13:26:12.300827+00:00, execution_date=20260308T132612, start_date=20260308T132614, end_date=20260308T132615
+[2026-03-08T13:26:15.511+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-03-08T13:26:15.532+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-03-08T13:26:15.533+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

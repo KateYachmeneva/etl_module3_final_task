@@ -1,0 +1,21 @@
+[2026-03-09T09:19:39.335+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-03-09T09:19:39.365+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: partition_event_logs.create_partitioned_event_logs manual__2026-03-09T09:19:36.664706+00:00 [queued]>
+[2026-03-09T09:19:39.378+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: partition_event_logs.create_partitioned_event_logs manual__2026-03-09T09:19:36.664706+00:00 [queued]>
+[2026-03-09T09:19:39.379+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-03-09T09:19:39.387+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): create_partitioned_event_logs> on 2026-03-09 09:19:36.664706+00:00
+[2026-03-09T09:19:39.394+0000] {standard_task_runner.py:64} INFO - Started process 57 to run task
+[2026-03-09T09:19:39.396+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'partition_event_logs', 'create_partitioned_event_logs', 'manual__2026-03-09T09:19:36.664706+00:00', '--job-id', '24', '--raw', '--subdir', 'DAGS_FOLDER/partition_event_logs_dag.py', '--cfg-path', '/tmp/tmp82qij0r4']
+[2026-03-09T09:19:39.398+0000] {standard_task_runner.py:91} INFO - Job 24: Subtask create_partitioned_event_logs
+[2026-03-09T09:19:39.501+0000] {task_command.py:426} INFO - Running <TaskInstance: partition_event_logs.create_partitioned_event_logs manual__2026-03-09T09:19:36.664706+00:00 [running]> on host b6c7c57dde04
+[2026-03-09T09:19:39.612+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='partition_event_logs' AIRFLOW_CTX_TASK_ID='create_partitioned_event_logs' AIRFLOW_CTX_EXECUTION_DATE='2026-03-09T09:19:36.664706+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-03-09T09:19:36.664706+00:00'
+[2026-03-09T09:19:39.614+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-03-09T09:19:39.633+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-03-09T09:19:39.635+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/scripts/create_partitioned_event_logs.py']
+[2026-03-09T09:19:39.644+0000] {subprocess.py:86} INFO - Output:
+[2026-03-09T09:19:39.817+0000] {subprocess.py:93} INFO - Partitioned event_logs created successfully.
+[2026-03-09T09:19:39.824+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-03-09T09:19:39.825+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-03-09T09:19:39.847+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=partition_event_logs, task_id=create_partitioned_event_logs, run_id=manual__2026-03-09T09:19:36.664706+00:00, execution_date=20260309T091936, start_date=20260309T091939, end_date=20260309T091939
+[2026-03-09T09:19:39.872+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-03-09T09:19:39.888+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-03-09T09:19:39.890+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
