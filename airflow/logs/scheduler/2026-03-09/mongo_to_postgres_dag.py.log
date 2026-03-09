@@ -2392,3 +2392,10 @@
 [2026-03-09T10:57:49.365+0000] {logging_mixin.py:188} INFO - [2026-03-09T10:57:49.365+0000] {dag.py:3089} INFO - Sync 1 DAGs
 [2026-03-09T10:57:49.372+0000] {logging_mixin.py:188} INFO - [2026-03-09T10:57:49.372+0000] {dag.py:3947} INFO - Setting next_dagrun for mongo_to_postgres_etl to None, run_after=None
 [2026-03-09T10:57:49.391+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/mongo_to_postgres_dag.py took 0.064 seconds
+[2026-03-09T10:58:19.847+0000] {processor.py:161} INFO - Started process (PID=402) to work on /opt/airflow/dags/mongo_to_postgres_dag.py
+[2026-03-09T10:58:19.847+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/mongo_to_postgres_dag.py for tasks to queue
+[2026-03-09T10:58:19.848+0000] {logging_mixin.py:188} INFO - [2026-03-09T10:58:19.848+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/mongo_to_postgres_dag.py
+[2026-03-09T10:58:19.853+0000] {processor.py:840} INFO - DAG(s) 'mongo_to_postgres_etl' retrieved from /opt/airflow/dags/mongo_to_postgres_dag.py
+[2026-03-09T10:58:19.870+0000] {logging_mixin.py:188} INFO - [2026-03-09T10:58:19.870+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-03-09T10:58:19.876+0000] {logging_mixin.py:188} INFO - [2026-03-09T10:58:19.876+0000] {dag.py:3947} INFO - Setting next_dagrun for mongo_to_postgres_etl to None, run_after=None
+[2026-03-09T10:58:19.884+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/mongo_to_postgres_dag.py took 0.040 seconds

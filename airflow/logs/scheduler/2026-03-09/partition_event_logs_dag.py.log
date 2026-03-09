@@ -604,3 +604,10 @@
 [2026-03-09T10:57:49.278+0000] {logging_mixin.py:188} INFO - [2026-03-09T10:57:49.278+0000] {dag.py:3089} INFO - Sync 1 DAGs
 [2026-03-09T10:57:49.295+0000] {logging_mixin.py:188} INFO - [2026-03-09T10:57:49.295+0000] {dag.py:3947} INFO - Setting next_dagrun for partition_event_logs to None, run_after=None
 [2026-03-09T10:57:49.314+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/partition_event_logs_dag.py took 0.125 seconds
+[2026-03-09T10:58:19.684+0000] {processor.py:161} INFO - Started process (PID=399) to work on /opt/airflow/dags/partition_event_logs_dag.py
+[2026-03-09T10:58:19.685+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/partition_event_logs_dag.py for tasks to queue
+[2026-03-09T10:58:19.691+0000] {logging_mixin.py:188} INFO - [2026-03-09T10:58:19.690+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/partition_event_logs_dag.py
+[2026-03-09T10:58:19.709+0000] {processor.py:840} INFO - DAG(s) 'partition_event_logs' retrieved from /opt/airflow/dags/partition_event_logs_dag.py
+[2026-03-09T10:58:19.746+0000] {logging_mixin.py:188} INFO - [2026-03-09T10:58:19.746+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-03-09T10:58:19.762+0000] {logging_mixin.py:188} INFO - [2026-03-09T10:58:19.761+0000] {dag.py:3947} INFO - Setting next_dagrun for partition_event_logs to None, run_after=None
+[2026-03-09T10:58:19.784+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/partition_event_logs_dag.py took 0.113 seconds

@@ -10839,3 +10839,25 @@ File Path                                      PID    Runtime      # DAGs    # E
 /opt/airflow/dags/mongo_to_postgres_dag.py                              1           0  0.07s           2026-03-09T10:57:18
 /opt/airflow/dags/generate_mongo_data_dag.py                            1           0  0.05s           2026-03-09T10:57:18
 ================================================================================
+[2026-03-09T10:58:13.607+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/partition_event_logs_dag.py                           1           0  0.15s           2026-03-09T10:57:49
+/opt/airflow/dags/datamarts_dag.py                                      1           0  0.14s           2026-03-09T10:57:49
+/opt/airflow/dags/generate_mongo_data_dag.py                            1           0  0.08s           2026-03-09T10:57:49
+/opt/airflow/dags/mongo_to_postgres_dag.py                              1           0  0.07s           2026-03-09T10:57:49
+================================================================================
+[2026-03-09T10:58:44.037+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/partition_event_logs_dag.py                           1           0  0.13s           2026-03-09T10:58:19
+/opt/airflow/dags/datamarts_dag.py                                      1           0  0.12s           2026-03-09T10:58:19
+/opt/airflow/dags/generate_mongo_data_dag.py                            1           0  0.05s           2026-03-09T10:58:19
+/opt/airflow/dags/mongo_to_postgres_dag.py                              1           0  0.05s           2026-03-09T10:58:19
+================================================================================
